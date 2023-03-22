@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if status %}
+ <h2>successfull</h2>
+ {% else %}
+ <h2>your payment is faild try gain msg</h2>
+ {% endif %}
+
+ <a href="{% url 'coffee_payment'  %}" class="btn btn-primary" role="button">Buy another one</a>
+{% endblock  %}
